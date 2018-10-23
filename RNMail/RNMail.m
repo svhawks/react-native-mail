@@ -153,6 +153,11 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
     }
 }
 
+RCT_EXPORT_METHOD(canSendMail:(RCTResponseSenderBlock)callback)
+{
+  callback(@[@([MFMailComposeViewController canSendMail])]);
+}
+
 #pragma mark MFMailComposeViewControllerDelegate Methods
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error

@@ -149,4 +149,9 @@ public class RNMailModule extends ReactContextBaseJavaModule {
       }
     }
   }
+
+  @ReactMethod
+  public void canSendMail(Callback callback) {
+    callback.invoke(true);
+  }
 }
