@@ -119,7 +119,10 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
                             @"ogg" : @"audio/ogg",
                             @"xls" : @"application/vnd.ms-excel",
                             @"ics" : @"text/calendar",
-                            @"xlsx" : @"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                            @"xlsx" : @"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                            @"mp4" : @"video/mp4",
+                            @"mov" : @"video/quicktime",
+                            @"usdz" : @"model/vnd.pixar.usd"
                         };
                         if([supportedMimeTypes objectForKey:attachmentType]) {
                             mimeType = [supportedMimeTypes objectForKey:attachmentType];
